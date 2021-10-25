@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import "./Style.css"
 import pic1 from './../assets/pic-1.webp'
 import pic2 from './../assets/pic-2.webp'
