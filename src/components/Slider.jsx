@@ -10,6 +10,15 @@ const Slider = () => {
 
     const [ step, setStep ] = useState(1);
 
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setStep(step === 5 ? 1 : step + 1);
+        }, 2000);
+        return () => clearInterval(interval);
+    }, [step]);
+
+    
     const handleLeftArrow = () => {
         if(step === 1){
             setStep(5);
